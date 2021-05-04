@@ -14,6 +14,7 @@ var rand;
 var BradWalks;
 
 var ok=100;
+var drops = []
 
 
 var thunderCreatedFrame=0;
@@ -43,7 +44,7 @@ function setup(){
 
     //create drops
    for(i=0;i<ok;i++){
-       drops.push(new createDrop(random(0,400)),(random(0,400)));
+       drops.push(new createDrops(random(0,400)),(random(0,400)));
 
    }
     
@@ -90,7 +91,7 @@ function draw(){
 
     umbrella.display();
 
-    //display rain drops
+    drops.display();
    
 
     drawSprites();
