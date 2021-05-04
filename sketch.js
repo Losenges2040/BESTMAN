@@ -91,7 +91,7 @@ function draw(){
 
     umbrella.display();
 
-    drops.display();
+    //rain.display();
    
 
     drawSprites();
